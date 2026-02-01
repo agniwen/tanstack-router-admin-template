@@ -4,6 +4,10 @@ English | [简体中文](./README_zh.md)
 
 A modern admin dashboard template built with React 19 + TanStack Router + Ant Design Pro Components.
 
+## Documentation
+
+- [Style Guide](./docs/style-guide.md) - Coding conventions and project organization guidelines
+
 ## Tech Stack
 
 ### Core Framework

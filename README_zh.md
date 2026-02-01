@@ -4,6 +4,10 @@
 
 基于 React 19 + TanStack Router + Ant Design Pro Components 构建的现代化后台管理系统模板。
 
+## 文档
+
+- [风格指南](./docs/style-guide.zh-CN.md) - 编码规范与项目组织指南
+
 ## 技术栈
 
 ### 核心框架
