@@ -1,0 +1,14 @@
+{
+  "projectName": "tanstack-admin-template",
+  "mode": "file-router",
+  "typescript": true,
+  "tailwind": true,
+  "packageManager": "pnpm",
+  "git": true,
+  "install": true,
+  "addOnOptions": {},
+  "version": 1,
+  "framework": "react-cra",
+  "chosenAddOns": [
+  ]
+}

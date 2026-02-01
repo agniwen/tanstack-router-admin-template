@@ -1,0 +1,25 @@
+# Lefthook 配置文件
+# 在代码提交前自动运行检查
+
+# 验证提交信息格式
+commit-msg:
+  commands:
+    commitlint:
+      run: npx commitlint --edit {1}
+      fail_text: '提交信息不符合规范，请使用格式: <type>(<scope>): <subject>'
+
+pre-commit:
+  parallel: false
+  commands:
+    # ESLint 代码检查（只检查本次提交的文件）
+    eslint-check:
+      glob: '*.{js,jsx,ts,tsx}'
+      run: npx eslint {staged_files} --fix
+      stage_fixed: true
+      fail_text: ESLint 检查失败，请修复代码风格问题后再提交
+
+    # TypeScript 类型检查
+    typescript-check:
+      glob: '*.{ts,tsx}'
+      run: npx tsc --noEmit
+      fail_text: TypeScript 类型检查失败，请修复错误后再提交
